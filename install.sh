@@ -8,3 +8,8 @@ sudo tar -xvf cudnn-9.2-linux-x64-v7.2.1.38.tar
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+
+dpkg -i nccl-repo-ubuntu1604-2.2.13-ga-cuda8.0_1-1_amd64.deb 
+sudo dpkg -i nccl-repo-ubuntu1604-2.2.13-ga-cuda8.0_1-1_amd64.deb 
+sudo apt update
+sudo apt install libnccl2 libnccl-dev
