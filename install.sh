@@ -4,6 +4,7 @@ sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/
 sudo apt-get update
 sudo apt-get install -y cuda
 
+wget https://github.com/yihui-he/install-cuda9-cudnn7-nccl/releases/download/tar/cudnn-9.0-linux-x64-v7.3.1.20.tgz
 tar -xzvf cudnn-9.0-linux-x64-v7.3.1.20.tgz
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
