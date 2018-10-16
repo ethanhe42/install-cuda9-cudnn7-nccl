@@ -17,3 +17,5 @@ sudo dpkg -i nvidia-machine-learning-repo-ubuntu1604_1.0.0-1_amd64.deb
 sudo apt update
 sudo apt install -y --allow-downgrades libnccl2=2.3.5-2+cuda9.0 libnccl-dev=2.3.5-2+cuda9.0
 #sudo apt install libnccl2 libnccl-dev
+
+sudo nvidia-smi -pm 1
